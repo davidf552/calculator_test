@@ -16,3 +16,8 @@ operation = int(input())
 if operation == 1:
     result = num1 + num2
     print("The result of addition is:", result)
+
+elif operation == 2:
+    result = num1 - num2
+    print("The result of subtraction is:", result)
+    
