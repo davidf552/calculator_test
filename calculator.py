@@ -20,4 +20,8 @@ if operation == 1:
 elif operation == 2:
     result = num1 - num2
     print("The result of subtraction is:", result)
-    
+
+elif operation == 3:
+    result = num1 * num2
+    print("The result of multiplication is:", result)
+       
