@@ -11,3 +11,8 @@ print("2. Subtraction")
 print("3. Multiplication")
 print("4. Division")
 
+operation = int(input())
+
+if operation == 1:
+    result = num1 + num2
+    print("The result of addition is:", result)
