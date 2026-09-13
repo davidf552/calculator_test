@@ -24,4 +24,11 @@ elif operation == 2:
 elif operation == 3:
     result = num1 * num2
     print("The result of multiplication is:", result)
-       
+
+elif operation == 4:
+    if num2 != 0:
+        result = num1 / num2
+        print("The result of division is:", result)
+    else:
+        print("Error: Division by zero is not allowed.")
+        
