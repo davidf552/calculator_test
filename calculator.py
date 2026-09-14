@@ -1,3 +1,7 @@
+def add(a, b):
+    return a + b
+
+
 print("Welcome to the python calculator!")
 
 num1 = float(input("Enter the first number:"))
@@ -14,7 +18,7 @@ print("4. Division")
 operation = int(input())
 
 if operation == 1:
-    result = num1 + num2
+    result = add(num1, num2)
     print("The result of addition is:", result)
 
 elif operation == 2:
