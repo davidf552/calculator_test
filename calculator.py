@@ -1,3 +1,18 @@
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b != 0:
+        return a / b
+    else:
+        return "Error: Division by zero is not allowed."
+
 print("Welcome to the python calculator!")
 
 num1 = float(input("Enter the first number:"))
@@ -14,21 +29,17 @@ print("4. Division")
 operation = int(input())
 
 if operation == 1:
-    result = num1 + num2
+    result = add(num1, num2)
     print("The result of addition is:", result)
 
 elif operation == 2:
-    result = num1 - num2
+    result = subtract(num1, num2)
     print("The result of subtraction is:", result)
 
 elif operation == 3:
-    result = num1 * num2
+    result = multiply(num1, num2)
     print("The result of multiplication is:", result)
 
 elif operation == 4:
-    if num2 != 0:
-        result = num1 / num2
-        print("The result of division is:", result)
-    else:
-        print("Error: Division by zero is not allowed.")
-        
+    result = divide(num1, num2)
+    print("The result of division is:", result)
